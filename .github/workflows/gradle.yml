@@ -18,9 +18,9 @@ permissions:
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
-
+    container:
+      image: docker://rennanprysthon:java-image:java-image
     steps:
     - uses: actions/checkout@v3
     - name: Set up JDK 11
